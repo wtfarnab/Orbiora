@@ -1,0 +1,46 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String?
+  clerkId   String   @unique
+  points    Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  submissions Submission[]
+}
+
+model Submission {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+  type      String
+  weight    Float?
+  points    Int
+  imageUrl  String?
+  status    String   @default("PENDING")
+  createdAt DateTime @default(now())
+}
+
+model Bin {
+  id        String   @id @default(cuid())
+  location  String
+  type      String
+  status    String   @default("ACTIVE")
+}
+
+model Reward {
+  id          String   @id @default(cuid())
+  title       String
+  description String
+  cost        Int
+  provider    String
+}

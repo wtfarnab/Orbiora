@@ -1,0 +1,309 @@
+Orbiora UI Design Specification
+
+Design Style Reference: Dark Glass Analytics Dashboard UI
+Design Goal: Clean, modern, data-focused interface that emphasizes metrics, progress tracking, and clarity.
+
+1. Design Philosophy
+
+The interface should feel:
+
+Data-centric
+
+Minimal but powerful
+
+Professional
+
+Futuristic but readable
+
+Low cognitive load
+
+Primary principle:
+
+Data must stand out more than decoration.
+
+2. Layout Structure
+Global Layout
+Sidebar | Main Content Area | Assistant Panel
+
+Left Sidebar
+
+navigation icons + labels
+
+fixed position
+
+collapsible
+
+Main Area
+
+header navigation tabs
+
+metric cards
+
+charts
+
+data tables
+
+Right Panel
+
+AI assistant / contextual insights
+
+3. Color System
+Element	Color
+Background	Deep charcoal / near black
+Cards	Slightly lighter dark grey
+Primary Accent	Soft blue gradient
+Highlight	Cyan glow
+Text Primary	White
+Text Secondary	Grey
+
+Guideline:
+
+Use color only to indicate meaning.
+
+Avoid random accent colors.
+
+4. Typography
+
+Font Style:
+
+Sans-serif
+
+Modern geometric typeface
+
+Hierarchy:
+
+Type	Size	Weight
+Page Title	Large	Bold
+Card Numbers	Large	Semi-Bold
+Labels	Medium	Medium
+Metadata	Small	Regular
+5. Component System
+5.1 Metric Cards
+
+Used for:
+
+waste collected
+
+energy generated
+
+rank
+
+impact score
+
+Structure:
+
+Icon | Metric Title
+Big Number
+Small insight text
+
+Behavior:
+
+hover → soft glow
+
+animated count-up on load
+
+5.2 Charts
+
+Style rules:
+
+smooth curves
+
+gradient fill
+
+subtle grid lines
+
+hover tooltip
+
+soft animation on render
+
+Use charts for:
+
+weekly waste
+
+monthly energy
+
+contribution trend
+
+5.3 Sidebar Navigation
+
+Icons + text label
+
+States:
+
+Default → muted grey
+
+Hover → light glow
+
+Active → blue highlight bar
+
+5.4 Buttons
+
+Primary Button
+
+gradient blue
+
+rounded corners
+
+subtle shadow
+
+Secondary Button
+
+outlined
+
+transparent fill
+
+5.5 Tables
+
+Minimalist:
+
+no heavy borders
+
+row hover highlight
+
+sortable columns
+
+6. Interaction Design Rules
+
+Transitions:
+
+150–250ms
+
+ease-out curves
+
+Micro-interactions required:
+
+hover highlight
+
+loading shimmer
+
+button press scale
+
+chart animation
+
+7. Orbiora-Specific Screen Mapping
+Dashboard
+
+Shows:
+
+total waste
+
+electricity earned
+
+environmental impact
+
+weekly chart
+
+Upload Page
+
+UI Blocks:
+
+camera upload
+
+weight input
+
+QR scan
+
+submit button
+
+AI Hub
+
+Layout:
+
+chat interface
+
+suggestions
+
+quick topic buttons
+
+Admin Panel
+
+Tables:
+
+submissions
+
+flagged entries
+
+user stats
+
+8. Accessibility Rules
+
+Must include:
+
+high contrast text
+
+keyboard navigation
+
+tooltip labels
+
+readable font sizes
+
+no color-only indicators
+
+9. Responsive Behavior
+Device	Layout
+Desktop	Full layout
+Tablet	Collapsed sidebar
+Mobile	Bottom navigation
+10. Animation Language
+
+Allowed animations:
+
+fade
+
+slide
+
+scale
+
+chart draw
+
+Forbidden:
+
+bounce
+
+shake
+
+flashy transitions
+
+Reason: keeps interface professional.
+
+11. Design Constraints (Non-Negotiable)
+
+No clutter
+
+No bright backgrounds
+
+No unnecessary icons
+
+No more than 3 accent colors
+
+No inconsistent spacing
+
+12. Design Token Reference
+
+Spacing scale:
+
+4 / 8 / 12 / 16 / 24 / 32
+
+Border radius:
+
+Cards → 16px
+Buttons → 12px
+Inputs → 10px
+
+Shadow:
+Soft diffuse shadow only.
+
+Final UX Verdict
+
+This design style works extremely well for Orbiora because:
+
+It makes data feel valuable
+
+It signals seriousness
+
+It looks investor-ready
+
+It visually matches sustainability tech platforms
+
+
+
